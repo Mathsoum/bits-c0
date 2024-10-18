@@ -18,22 +18,31 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: Bits & Pieces
+email: mathieu@soum.me
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+baseurl: "/bits-and-pieces" # the subpath of your site, e.g. /blog
+url: "https://mathsoum.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+github_username: mathsoum
+
+words_per_minute: 200
+enable_copy_code_button: true # true, false (default)
+repository: mathsoum/bits-and-pieces
 
 # Build settings
-theme: minima
+#theme: "minima"
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "sunrise" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
 plugins:
   - jekyll-feed
-
+  - jekyll-gist
+  - jekyll-include-cache
+  - jekyll-paginate
+  - jekyll-sitemap
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
@@ -53,3 +62,29 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+author:
+  name: "Mathieu Lê-Soum"
+  avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio: "I am an **amazing** person."
+  location: "Toulouse, France"
+  email:
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      # url: "mailto:your.name@email.com"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      # url: "https://your-website.com"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      # url: "https://twitter.com/"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      # url: "https://facebook.com/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      # url: "https://github.com/"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      # url: "https://instagram.com/"
